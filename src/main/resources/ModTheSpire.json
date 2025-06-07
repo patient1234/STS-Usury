@@ -1,9 +1,9 @@
 {
-  "modid": "justclick",
-  "name": "点击打牌",
+  "modid": "usury",
+  "name": "高利贷",
   "author_list": ["河童"],
-  "description": "点一下直接打出牌，不需要拖动。",
+  "description": "这五十万哪来的啊？",
   "dependencies": ["basemod"],
-  "version": "0.1.1",
+  "version": "0.0.1",
   "sts_version": "06-2-2025"
 }
