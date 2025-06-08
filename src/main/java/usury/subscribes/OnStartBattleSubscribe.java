@@ -28,7 +28,7 @@ public class OnStartBattleSubscribe implements OnStartBattleSubscriber {
                 AbstractDungeon.actionManager.addToBottom(
                         new com.megacrit.cardcrawl.actions.common.ApplyPowerAction(
                                 m, AbstractDungeon.player,
-                                new StrengthPower(m, (loanFloors - 5) % 5)
+                                new StrengthPower(m, loanFloors % 5)
                         )
                 );
             }

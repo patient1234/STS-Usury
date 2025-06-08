@@ -22,14 +22,25 @@ public class UpdateWorthPatch {
 
     private static final String[] TEXT;
 
-    private static final ArrayList<AbstractCard> cards = new ArrayList<>();
-    private static final ArrayList<AbstractPotion> potions = new ArrayList<>();
-    private static final ArrayList<AbstractRelic> relics = new ArrayList<>();
-    private static int gold = -1;
-    private static int loanAmount = -1;
-    private static int loanFloorNum = -1;
-    private static int floorNum = -1;
-    private static AbstractDungeon.CurrentScreen currentScreen = null;
+    private static ArrayList<AbstractCard> cards;
+    private static ArrayList<AbstractPotion> potions;
+    private static ArrayList<AbstractRelic> relics;
+    private static int gold;
+    private static int loanAmount;
+    private static int loanFloorNum;
+    private static int floorNum;
+    private static AbstractDungeon.CurrentScreen currentScreen;
+
+    public static void initialize() {
+        cards = new ArrayList<>();
+        potions = new ArrayList<>();
+        relics = new ArrayList<>();
+        gold = -1;
+        loanAmount = -1;
+        loanFloorNum = -1;
+        floorNum = -1;
+        currentScreen = null;
+    }
 
     private static boolean isUpdated() {
         return ! cards.equals(AbstractDungeon.player.masterDeck.group) ||

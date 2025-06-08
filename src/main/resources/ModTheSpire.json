@@ -4,6 +4,6 @@
   "author_list": ["河童"],
   "description": "这五十万哪来的啊？",
   "dependencies": ["basemod"],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "sts_version": "06-2-2025"
 }
